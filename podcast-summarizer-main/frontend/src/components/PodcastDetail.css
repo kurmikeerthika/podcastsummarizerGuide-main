@@ -1,0 +1,128 @@
+.podcast-detail {
+  width: 100%;
+}
+
+.back-btn {
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+
+.detail-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.detail-header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.detail-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header-info h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.header-info .episode-title {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-content {
+  padding: 2rem;
+}
+
+.summary-section {
+  margin-bottom: 3rem;
+}
+
+.summary-section h2,
+.metadata-section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.summary-text {
+  background: rgba(102, 126, 234, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.05rem;
+  border-left: 4px solid #667eea;
+}
+
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  border-left: 3px solid #764ba2;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.meta-value {
+  color: #333;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .detail-header {
+    grid-template-columns: 1fr;
+  }
+
+  .header-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .detail-image {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .metadata {
+    grid-template-columns: 1fr;
+  }
+}

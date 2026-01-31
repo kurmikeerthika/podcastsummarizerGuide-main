@@ -1,0 +1,18 @@
+{
+  "name": "podcast-summarizer",
+  "version": "1.0.0",
+  "description": "Podcast Summarizer - AI-powered transcription and summarization",
+  "private": true,
+  "engines": {
+    "node": "18.x",
+    "npm": "10.x"
+  },
+  "scripts": {
+    "build-frontend": "cd frontend && npm ci && npm run build && cd ..",
+    "start": "flask run",
+    "heroku-postbuild": "cd frontend && npm ci && npm run build"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  }
+}
